@@ -7,7 +7,6 @@
   pip:
     name:
       - docker
-      - docker-compose
 
 - name: run container
   docker_container:
