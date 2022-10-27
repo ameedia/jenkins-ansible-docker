@@ -8,6 +8,13 @@
     name:
       - docker
 
+- name: Log into private registry and force re-authorization
+  docker_login:
+    registry: registry.gitlab.com
+    username: amedia
+    password: Maham2003
+    reauthorize: yes
+
 - name: run container
   docker_container:
     name: wartest
